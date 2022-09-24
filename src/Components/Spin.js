@@ -4,7 +4,7 @@ import load from './load.gif'
 export default function Spin() {
     return (
         <div className="text-center">
-            <img src={load} alt="loading" />
+            <img className="my-3" src={load} alt="loading" />
         </div>
     )
 }

@@ -6,7 +6,7 @@ export class NavBar extends Component {
     render(props) {
         return (
             <div>
-                <nav className={`navbar navbar-expand-lg navbar-dark bg-dark`}>
+                <nav className={`navbar fixed-top navbar-expand-lg navbar-dark bg-dark`}>
   <div className="container-fluid">
     <Link className="navbar-brand" to="/">News for US</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,10 +23,6 @@ export class NavBar extends Component {
         <li className="nav-item"><Link className="nav-link" to="/technology">Technology</Link></li>
         <li className="nav-item"><Link className="nav-link" to="/business">Business</Link></li>
       </ul>
-      <div className="form-check form-switch text-light">
-      <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"/>
-      <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
-      </div>
     </div>
   </div>
 </nav>
